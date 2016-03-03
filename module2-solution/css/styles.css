@@ -1,0 +1,78 @@
+/********** Base styles **********/
+
+/* Simple Responsive Framework. */
+*{
+	box-sizing: border-box;
+}
+.row {
+	width: 100%;
+	background-color: yellow;
+}
+
+.first, .second, .third{
+	float: left;
+}
+.container {
+	border: 1px solid black;
+	background-color: #aa908a;
+	width: 95%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subContainer
+{
+	padding: 10px;
+}
+
+.titleRegion {
+	position: relative;
+	border: 1px solid black;
+	width: 30%;
+	right: -70%;
+}
+
+.mainTitle{
+	text-align: center;
+}
+
+.label1{
+	background-color: #0a908a;
+}
+
+.label2{
+	background-color: #5a90aa;
+}
+
+.label3{
+	background-color: #55508a;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	.first, .second, .third {
+		width: 33.33%;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.first, .second {
+		width: 50%;
+	}
+	.third {
+		width: 100%;
+	}
+
+	.thirdContainer{
+		width: 97.5%;
+	}
+}
+
+/********** Medium devices only **********/
+@media (max-width: 767px) {
+	.first, .second, .third{
+		width: 100%;
+	}
+}
+
